@@ -1,0 +1,19 @@
+Usage: "malloc <test case>"
+
+» ./malloc 1
+
+» ./malloc 2
+Error: Cannot free memory which wasn't allocated by malloc. (src/main.c, line 26)
+
+» ./malloc 3
+Error: Cannot free memory which wasn't allocated by malloc. (src/main.c, line 31)
+Error: Found memory leak. (src/main.c, line 30)
+
+» ./malloc 4
+gfdsfhadfg dsafsdgsasdfs
+
+» ./malloc 5
+Error: Not enough memory. (src/main.c, line 47)
+
+» ./malloc 6
+Error: Cannot free memory which wasn't allocated by malloc. (src/main.c, line 52)
